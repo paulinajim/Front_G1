@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/reportes.js"></script>
+    </head>
+    <body>
+        <h1>Front Final G1</h1>
+        <H1> Reportes </H1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gama.html">Gamas</a></li>
+            <li><a href="car.html">Carros</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            
+        </ul>
+
+        <button onclick="traerReporteStatus()">Generar Reporte Status</button>
+        <div id="resultado1"></div><br>
+        <button onclick="TraerReporteFechas()">Generar Reporte de Fechas</button><br>
+        <div id="resultado2"></div><br>
+        <label>Ingrese la fecha de Inicio de la Reservación</label>
+        <input type="date" id= "startDate"><br>
+        <label>Ingrese la fecha de la Devolución del Vehículo</label>
+        <input type="date" id="devolutionDate"><br>
+        <button onclick="traerReporteClientes()">Generar Reporte de Clientes</button><br>
+        <div id="resultado3"></div><br>
+        
+    </body>
+</html>
